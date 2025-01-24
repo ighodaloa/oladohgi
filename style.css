@@ -35,8 +35,13 @@ body {
     font-size: 5px;
     }
 
-    .category a {
-      font-size: 20px;
+    .category {
+      font-size: 4rem;
+      border: 1rem solid rgb(14, 14, 14);
+      background-color: #cccccc;
+      border-radius: 2rem;
+      margin-bottom: 1rem;
+      border: 
     }
   }
 
@@ -53,7 +58,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     background-color: rgb(72, 72, 72);
-    width: 55rem;
+    width: 80%;
     height: 5rem;
     padding: 0;
     margin-top: 10px;
@@ -133,7 +138,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0rem 1rem;
   }
 
   .category_image{
@@ -151,16 +155,6 @@ body {
     text-decoration: none;
 
   }
-
-.category a {
-  text-shadow: 
-        1px 1px 0px rgb(43, 42, 42),
-        -1px -1px 0px rgb(43, 42, 42),
-        1px -1px 0px rgb(43, 42, 42),
-        -1px 1px 0px rgb(43, 42, 42);
-}
-
-
 
   /* unvisited link */
 a:link {
