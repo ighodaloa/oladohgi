@@ -1,0 +1,152 @@
+html {
+  font-size: 10px;
+}
+
+body {
+    font-size: 3.2rem;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 1500px) {
+    .category img{
+      display: none;
+    }
+
+    html {
+      font-size: 7.5px;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .category img{
+      display: none;
+    }
+
+    html {
+      font-size: 5px;
+    }
+
+    .main{
+      flex-direction: row !important;
+    }
+
+    .categories{
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .category img{
+      display: none;
+    }
+
+    html {
+      font-size: 4px;
+    }
+
+    .main{
+      flex-direction: row !important;
+    }
+
+    .categories{
+      flex-direction: column;
+    }
+  }
+  
+  /* Header Section */
+  .header {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+  
+  /* Search Bar */
+  .searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(204, 204, 204);
+    width: 55rem;
+    height: 5rem;
+    padding: 0;
+  }
+  
+  .searchbar_icon {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .search-input {
+    font-size: 3.2rem;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: rgb(204, 204, 204);
+  }
+
+  .search-input::placeholder {
+    color: white;
+  }
+
+  .search-input:focus {
+    border: none;
+    outline: none;
+  }
+  
+  /* Login Section */
+  .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(204, 204, 204);
+    padding: 0rem 1.6rem;
+    position: absolute;
+    right: 0;
+  }
+  
+  /* Main Layout */
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Portrait Layout */
+  .portrait {
+    margin: 5rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portrait img{
+    width: 25rem;
+    height: auto;
+  }
+
+  /* Categories */
+  .categories {
+    display: flex;
+    justify-content: center;
+    margin: 0rem;
+    width: 100%;
+  }
+  
+  .category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 1rem;
+  }
+
+  a {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
