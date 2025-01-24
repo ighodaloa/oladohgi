@@ -12,13 +12,13 @@ body {
     align-items: center;
   }
 
-  @media screen and (max-width: 1500px) {
-    .category img{
-      display: none;
-    }
+@media screen and (max-width: 768px) {
+  html{
+    font-size: 5px;
   }
+}
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 480px) {
     .category img{
       display: none;
     }
@@ -31,12 +31,12 @@ body {
       flex-direction: column;
     }
 
-    .category a {
-      font-size: 40px;
+    html{
+    font-size: 5px;
     }
 
-    .login {
-      width: 120px
+    .category a {
+      font-size: 20px;
     }
   }
 
@@ -137,8 +137,10 @@ body {
   }
 
   .category_image{
-    border: 10px solid rgb(14, 14, 14);
-    border-radius: 20px;
+    border: 1rem solid rgb(14, 14, 14);
+    border-radius: 2rem;
+    width: 25.6rem;
+    height: auto;
   }
 
   a {
