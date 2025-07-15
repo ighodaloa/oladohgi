@@ -1,0 +1,169 @@
+@media (min-width: 768px) {
+  .logo-desktop {
+    display: block;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+
+    .body_upperHalf {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+  }
+
+  .body_lowerHalf {
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .Quote_of_the_day {
+    max-width: 27%;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo-desktop {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: block;
+  }
+
+  .body_lowerHalf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+}
+
+@font-face {
+  font-family: 'Ighofonto';
+  src: url(Ighofonto-Regular.ttf);
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  z-index: -1; /* stay behind all content */
+  opacity: 0.2; /* control transparency */
+  pointer-events: none; /* avoid capturing clicks */
+}
+
+.body {
+  margin-top: 3rem;
+}
+
+html {
+  font-size: 10px;
+  width: 100%;
+}
+
+h2 {
+  font-size: 2.7rem;
+  color: #000000;
+}
+
+p {
+  font-size: 2.7rem;
+}
+
+a {
+  font-size: 2.4rem;
+}
+
+body {
+  font-family: 'Ighofonto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(57, 57, 57);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.header {
+  width: 100%;
+  background-color: rgb(40, 40, 40);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: .2rem solid #000000;
+  border-bottom: .2rem solid #000000;
+}
+
+.header img {
+  height: 5rem;
+  padding-right: 2rem;
+  width: auto;
+}
+
+div.contact {
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a.contact_a:link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+a.contact_a:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+a.contact_a:hover {
+  color: rgb(252, 192, 226);
+  text-decoration: none;
+}
+a.contact_a:active {
+  color: rgb(235, 45, 153);
+}
+
+.Quote_of_the_day {
+    background-color: rgb(92, 92, 92);
+    border: .2rem solid #000000;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Quote_of_the_day P {
+  max-width: 90%;
+}
+
+.Image_of_the_day {
+    background-color: rgb(92, 92, 92);
+    border: .2rem solid #000000;
+    border-radius: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.Image_of_the_day h2 {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.body_lowerHalf img {
+    border: .2rem solid #000000;
+    border-radius: 1rem;
+}
