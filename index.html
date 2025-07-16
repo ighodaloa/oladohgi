@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <title>Home</title> <!-- The website's home page will be Ighodalo's home page by default. Searching "Ighodalo" in the search bar will take you to the home page. -->
+        <title>Home</title>
         <meta charset = "UTF-8">
         <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
         <link rel = "stylesheet" href = "style.css">
@@ -9,8 +9,18 @@
 
     <body>
        <div class = "header">
-            <div class = "contact">
-                <a class = "contact_a" href = "">Contact Me!</a>
+                <div class = "contact_a_dropdown">
+                    <p>Email: <a href = "mailto:Ighodalo.Agbonkhese@outlook.com">Ighodalo.Agbonkhese@outlook.com</a></p>
+                    <p>Linkedin: <a href = "https://www.linkedin.com/in/ighodaloa/">Ighodalo Agbonkhese</a></p>
+                    <p>YouTube: <a href = "https://www.youtube.com/@tc0358">tc0358</a></p>
+                </div>
+            <div class = "contact"> <!--Consider removing after adding the dropdown, as we may not need a div over here-->
+                <a class="contact_a" href="#" onclick="event.preventDefault()">Reach Me!</a>
+                <!-- <div class = "contact_a_dropdown">
+                    <p>Email: <a href = "mailto:Ighodalo.Agbonkhese@outlook.com">Ighodalo.Agbonkhese@outlook.com</a></p>
+                    <p>Linkedin: <a href = "https://www.linkedin.com/in/ighodaloa/">Ighodalo Agbonkhese</a></p>
+                    <p>YouTube: <a href = "https://www.youtube.com/@tc0358">tc0358</a></p>
+                </div> -->
             </div>
             <img class = "logo-mobile" src = "portrait.png" alt = "Cartoon Portrait of Ighodalo">
        </div>
@@ -27,13 +37,13 @@
              <div class = "body_lowerHalf">
                 <div class = "Quote_of_the_day">
                     <h2>Quote of the day!</h2>
-                     <p id="quote">Loading quote...</p>
-                     <p id="author"></p>
+                    <p id="quote">Loading quote...</p>
+                    <p id="author"></p>
                 </div>
                 <a href = ""><img src = "Projects.png" alt = "icon for projects link"></a>
                 <div class = "Image_of_the_day">
                     <h2>Image of the day!</h2>
-                    <img id="meme-img" alt="Image of the day" style = "max-width: 300px; height: auto;"/>
+                    <img id="meme-img" alt="Image of the day"/>
                 </div>
             </div> 
        </div>

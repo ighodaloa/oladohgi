@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 768px) { /*pc screens*/
   .logo-desktop {
     display: block;
   }
@@ -7,15 +7,9 @@
     display: none;
   }
 
-    .body_upperHalf {
-    /* background-color: aqua; */
-    display: flex;
-    justify-content: center;
-  }
-
   .body_lowerHalf {
-    /* background-color: blueviolet; */
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -24,9 +18,33 @@
   .Quote_of_the_day {
     max-width: 27%;
   }
+
+  .Image_of_the_day {
+    max-width: 27%;
+    height: auto;
+  }
+
+  .Image_of_the_day img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .contact_a_dropdown {
+  display: none;
+  position: absolute;
+  min-width: 37rem;
+  padding: 0rem 2rem;
+  top: 100%;
+  left: 0%;
+  background-color: rgb(40, 40, 40);
+  border-top: .2rem solid #000000;
+  border-bottom: .2rem solid #000000;
+  border-right: .2rem solid #000000;
+  box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.5);
+  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px) { /*mobile screens*/
   .logo-desktop {
     display: none;
   }
@@ -41,6 +59,25 @@
     align-items: center;
     gap: 1.5rem;
     padding: 1.5rem;
+  }
+
+  .Image_of_the_day img {
+    max-width: 100%;
+    height: auto;
+  }
+
+    .contact_a_dropdown {
+    display: none;
+    position: absolute;
+    min-width: 37rem;
+    padding: 0rem 2rem;
+    top: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(40, 40, 40);
+    border: .2rem solid #000000;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.85), 0 0 2rem rgba(0, 0, 0, 0.6);
+
   }
 }
 
@@ -59,10 +96,6 @@
   z-index: -1; /* stay behind all content */
   opacity: 0.2; /* control transparency */
   pointer-events: none; /* avoid capturing clicks */
-}
-
-.body {
-  margin-top: 3rem;
 }
 
 html {
@@ -94,7 +127,8 @@ body {
   align-items: center;
 }
 
-div.header {
+.header {
+  position: relative;
   width: 100%;
   background-color: rgb(40, 40, 40);
   display: flex;
@@ -110,27 +144,45 @@ div.header {
   width: auto;
 }
 
-div.contact {
+.contact {
+  width: 100%;
+  position: relative;
   padding: 1.5rem 2rem;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-}
+} 
 
 a.contact_a:link {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
+
 a.contact_a:visited {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-a.contact_a:hover {
+.contact:hover a.contact_a { /*Dropdown (kinda)*/
   color: rgb(252, 192, 226);
   text-decoration: none;
 }
+
+.header:hover .contact_a_dropdown { /*Dropdown*/
+  display: block;
+}
+
 a.contact_a:active {
   color: rgb(235, 45, 153);
+}
+
+.body {
+  margin-top: 3rem;
+}
+
+.body_upperHalf {
+  display: flex;
+  justify-content: center;
 }
 
 .Quote_of_the_day {
@@ -150,7 +202,6 @@ a.contact_a:active {
     background-color: rgb(92, 92, 92);
     border: .2rem solid #000000;
     border-radius: 1rem;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
