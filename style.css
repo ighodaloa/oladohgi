@@ -67,7 +67,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    margin: 1.5rem;
+    margin: 4rem;
   }
 
   .body_lowerHalf a {
@@ -201,13 +201,15 @@ a.contact_a:active {
 
 .contact_a_dropdown_mobile {
     position: sticky;
-    top: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: fit-content;
+    width: 60%;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-height: 18.00rem;
-    margin: 0rem 2rem;
+    justify-content: center;
     background-color: rgb(40, 40, 40);
     border: .2rem solid #000000;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.85), 0 0 2rem rgba(0, 0, 0, 0.6);
@@ -225,8 +227,15 @@ a.contact_a:active {
 }
 
 .contact_a_dropdown_mobile p {
-    width: 90%;
+    /* width: 90%; */
     margin: 1rem;
+}
+
+.contact_a_dropdown_mobile_links {
+  word-break: break-all; /* breaks long words like emails or URLs */
+  overflow-wrap: break-word;
+  display: inline-block;
+  max-width: 100%; /* ensure it stays inside the container */
 }
 
 .body {
