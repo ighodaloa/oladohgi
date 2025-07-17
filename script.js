@@ -107,8 +107,10 @@ const quotes = [
   { quote: "Have I ever been wrong? I mean like, you know when it counts.", author: "Pigeon mlm" },
   { quote: "Working so hard every night and day And now we get the pay back. Trying so hard, saving up the paper Now we get to lay back.", author: "?" },
   { quote: "When things bitter, she dey hang on. When things better, she dey thank God.", author: "Omah Lay" },
-  { quote: "Sophmore year, that junk crazy. Before you know it we gonna be seniors", author: "D" },
-  { quote: "And that's gonna be the end of it", author: "Ife" },
+  {
+    quote: `D: Sophomore year, that junk crazy. Before you know it we gonna be seniors."\nIfe: And that's gonna be the end of it.`,
+    author: "Ife"
+  },
   { quote: "Me I dey feel pain, but I move forward and I switch lanes. Because Odogwu no be nickname", author: "Burna" },
   { quote: "I no go give into the pressure", author: "Joeboy" },
   { quote: "I fell on my face, got up on my own", author: "Carti" },
@@ -230,3 +232,29 @@ fetch("https://meme-api.com/gimme")
     const img = document.getElementById("meme-img");
     img.src = data.url;
   });
+
+
+  //"Reach Me!"
+const toggle = document.getElementById('contactToggle');
+const dropdown = document.getElementById('contactDropdown');
+const closeButton = document.getElementById('closeButton');
+const mobileMode = document.getElementById('mobileMode');
+
+// Toggle dropdown only in mobile
+toggle.addEventListener('click', (e) => {
+  if (window.getComputedStyle(mobileMode).display === 'block') {
+    e.stopPropagation();
+    dropdown.style.display = dropdown.style.display === 'flex' ? 'none' : 'flex';
+  }
+});
+
+// Close dropdown on clicking close button
+closeButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  dropdown.style.display = 'none';
+});
+
+// Close dropdown if clicking outside
+document.addEventListener('click', (e) => {
+  dropdown.style.display = 'none';
+});

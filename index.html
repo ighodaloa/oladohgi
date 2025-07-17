@@ -9,21 +9,27 @@
 
     <body>
        <div class = "header">
-                <div class = "contact_a_dropdown">
+            <div class = "contact" id = "contactToggle"> <!--Consider removing after adding the dropdown, as we may not need a div over here-->
+                <a class="contact_a" href="#" onclick="event.preventDefault()">Reach Me!</a>
+                <div class = "contact_a_dropdown"> <!--Drop down used for PC Mode-->
                     <p>Email: <a href = "mailto:Ighodalo.Agbonkhese@outlook.com">Ighodalo.Agbonkhese@outlook.com</a></p>
                     <p>Linkedin: <a href = "https://www.linkedin.com/in/ighodaloa/">Ighodalo Agbonkhese</a></p>
                     <p>YouTube: <a href = "https://www.youtube.com/@tc0358">tc0358</a></p>
                 </div>
-            <div class = "contact"> <!--Consider removing after adding the dropdown, as we may not need a div over here-->
-                <a class="contact_a" href="#" onclick="event.preventDefault()">Reach Me!</a>
-                <!-- <div class = "contact_a_dropdown">
-                    <p>Email: <a href = "mailto:Ighodalo.Agbonkhese@outlook.com">Ighodalo.Agbonkhese@outlook.com</a></p>
-                    <p>Linkedin: <a href = "https://www.linkedin.com/in/ighodaloa/">Ighodalo Agbonkhese</a></p>
-                    <p>YouTube: <a href = "https://www.youtube.com/@tc0358">tc0358</a></p>
-                </div> -->
             </div>
-            <img class = "logo-mobile" src = "portrait.png" alt = "Cartoon Portrait of Ighodalo">
+            <img class = "logo-mobile" id = "mobileMode" src = "portrait.png" alt = "Cartoon Portrait of Ighodalo"> <!--portrain icon used on mobile mode-->
        </div>
+
+        <div class="contact_a_dropdown_mobile_bg" id="contactDropdown"> <!--Drop down BG used for Mobile Mode-->
+            <div class="contact_a_dropdown_mobile"> <!--Drop down used for Mobile Mode-->
+                <a class="closeIcon" href="#" id="closeButton" onclick="event.preventDefault()">
+                    <img src="closeIcon.png" alt="Close Button">
+                </a>
+                <p>Email: <a href ="mailto:Ighodalo.Agbonkhese@outlook.com" class = "contact_a_dropdown_mobile_links">Ighodalo.Agbonkhese@outlook.com</a></p>
+                <p>Linkedin: <a href="https://www.linkedin.com/in/ighodaloa/" class = "contact_a_dropdown_mobile_links">Ighodalo Agbonkhese</a></p>
+                <p>YouTube: <a href="https://www.youtube.com/@tc0358" class = "contact_a_dropdown_mobile_links">tc0358</a></p>
+            </div>
+        </div>
 
         <video id="bg-video" autoplay muted loop playsinline>
             <source src="BackgroundVideo.mp4" type="video/mp4">
@@ -40,7 +46,7 @@
                     <p id="quote">Loading quote...</p>
                     <p id="author"></p>
                 </div>
-                <a href = ""><img src = "Projects.png" alt = "icon for projects link"></a>
+                <a class = "projects" href = ""><img src = "Projects.png" alt = "icon for projects link"></a>
                 <div class = "Image_of_the_day">
                     <h2>Image of the day!</h2>
                     <img id="meme-img" alt="Image of the day"/>
