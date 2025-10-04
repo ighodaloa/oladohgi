@@ -2,9 +2,11 @@ html, body {
     font-size: 10px;
     width: 100%;
     height: 100%;
-    font-size: 10px;
     margin: 0;
     overflow-x: hidden; /* keeps page from sideways scrolling */
+}
+html{
+    font-size: 10px;
 }
 
 h2 {
@@ -20,21 +22,21 @@ p {
   font-size: 4rem;
   padding: 1.5rem 2rem;
 }
-.home_a:link {
+.home_a a:link {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
-.home_a:visited {
+.home_a a:visited {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-.home_a:hover { /*Dropdown (kinda)*/
+.home_a a:hover { /*Dropdown (kinda)*/
   color: rgb(252, 192, 226);
   text-decoration: none;
 }
 
-.home_a:active {
+.home_a a:active {
   color: rgb(235, 45, 153);
 }
 
@@ -64,22 +66,34 @@ body {
 }
 .header img {
   height: 5rem;
-  padding: 1rem 2rem;
+  padding-right: 2rem;
   width: auto;
 }
 
+
+
 @media (min-width: 768px) { /*pc screens*/
     .wrapper {
+        padding: 1.5rem;
         width: 80%;
     }
 
     .wrapper h2 {
-        margin-bottom: 0rem;
+     margin: 0;
+  padding: 0;
+  background: rgb(10, 77, 105);
+  border: solid rgb(1, 17, 23) .2rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  display: inline-block; /* makes width shrink to text */
     }
 
     .scrollWrapper {
-        border: solid .2rem rgb(1, 17, 23);
-        border-radius: 1rem;
+  border: solid 0rem rgb(1, 17, 23);
+  border-top-left-radius: 0;      /* top-left stays sharp */
+  border-top-right-radius: 1rem;  /* top-right rounded */
+  border-bottom-right-radius: 1rem; /* bottom-right rounded */
+  border-bottom-left-radius: 1rem;  /* bottom-left rounded */
         background-color: rgb(13, 90, 123);
         width: 100%;
         overflow-x: auto; /* this creates the horizontal scrollbar */
@@ -89,30 +103,36 @@ body {
 
     .item {
         background-color: rgb(16, 137, 189);
-        min-width: 25%; /* each item takes up some chunk of width */
-        height: 15rem;   /* fixed height so it looks consistent */
+        min-width: 33%; /* each item takes up some chunk of width */
+        height: 20rem;   /* fixed height so it looks consistent */
         display: flex;
         align-items: center;
         justify-content: center;
     }
-
-     /* .scrollWrapper::-webkit-scrollbar {
-        display: none;
-    }  */
 }
 
 @media (max-width: 767px) { /*mobile screens*/
     .wrapper {
-        width: 80%;
+        padding: 1.5rem;
+        width: 90%;
     }
 
     .wrapper h2 {
-        margin-bottom: 0rem;
+     margin: 0;
+  padding: 0;
+  background: rgb(10, 77, 105);
+  border: solid rgb(1, 17, 23) .2rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  display: inline-block; /* makes width shrink to text */
     }
 
     .scrollWrapper {
-        border: solid .2rem rgb(1, 17, 23);
-        border-radius: 1rem;
+  border: solid 0rem rgb(1, 17, 23);
+  border-top-left-radius: 0;      /* top-left stays sharp */
+  border-top-right-radius: 1rem;  /* top-right rounded */
+  border-bottom-right-radius: 1rem; /* bottom-right rounded */
+  border-bottom-left-radius: 1rem;  /* bottom-left rounded */
         background-color: rgb(13, 90, 123);
         width: 100%;
         overflow-x: auto; /* this creates the horizontal scrollbar */
@@ -122,14 +142,11 @@ body {
 
     .item {
         background-color: rgb(16, 137, 189);
-        min-width: 50%; /* each item takes up some chunk of width */
-        height: 15rem;   /* fixed height so it looks consistent */
+        min-width: 75%; /* each item takes up some chunk of width */
+        height: 25rem;   /* fixed height so it looks consistent */
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-     /* .scrollWrapper::-webkit-scrollbar {
-        display: none;
-    } */
 }
