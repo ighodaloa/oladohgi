@@ -1,34 +1,135 @@
+html, body {
+    font-size: 10px;
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    margin: 0;
+    overflow-x: hidden; /* keeps page from sideways scrolling */
+}
+
+h2 {
+  font-size: 3.75rem;
+  color: #000000;
+}
+
+p {
+  font-size: 3rem;
+}
+
+.home_a {
+  font-size: 4rem;
+  padding: 1.5rem 2rem;
+}
+.home_a:link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.home_a:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.home_a:hover { /*Dropdown (kinda)*/
+  color: rgb(252, 192, 226);
+  text-decoration: none;
+}
+
+.home_a:active {
+  color: rgb(235, 45, 153);
+}
+
 @font-face {
   font-family: 'Ighofonto';
   src: url(Ighofonto-Regular.ttf);
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
-    font-size: 10px;
-    padding: 0;
-    margin: 0;
-}
-
 body {
     font-family: 'Ighofonto', sans-serif;
+    background-color: rgb(11, 99, 136);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: #154894;
+    gap: 2rem; /* space between wrappers */
 }
 
-p, h1 {
-    color: white;
-    margin: 1rem;
+.header {
+  position: relative;
+  width: 100%;
+  background-color: rgb(40, 40, 40);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: .2rem solid #000000;
+  border-bottom: .2rem solid #000000;
+}
+.header img {
+  height: 5rem;
+  padding: 1rem 2rem;
+  width: auto;
 }
 
-h1 {
-    font-size: 6rem;
+@media (min-width: 768px) { /*pc screens*/
+    .wrapper {
+        width: 80%;
+    }
+
+    .wrapper h2 {
+        margin-bottom: 0rem;
+    }
+
+    .scrollWrapper {
+        border: solid .2rem rgb(1, 17, 23);
+        border-radius: 1rem;
+        background-color: rgb(13, 90, 123);
+        width: 100%;
+        overflow-x: auto; /* this creates the horizontal scrollbar */
+        display: flex;
+        gap: .2rem;
+    }
+
+    .item {
+        background-color: rgb(16, 137, 189);
+        min-width: 25%; /* each item takes up some chunk of width */
+        height: 15rem;   /* fixed height so it looks consistent */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+     /* .scrollWrapper::-webkit-scrollbar {
+        display: none;
+    }  */
 }
 
-p {
-    font-size: 4rem;
+@media (max-width: 767px) { /*mobile screens*/
+    .wrapper {
+        width: 80%;
+    }
+
+    .wrapper h2 {
+        margin-bottom: 0rem;
+    }
+
+    .scrollWrapper {
+        border: solid .2rem rgb(1, 17, 23);
+        border-radius: 1rem;
+        background-color: rgb(13, 90, 123);
+        width: 100%;
+        overflow-x: auto; /* this creates the horizontal scrollbar */
+        display: flex;
+        gap: .2rem;
+    }
+
+    .item {
+        background-color: rgb(16, 137, 189);
+        min-width: 50%; /* each item takes up some chunk of width */
+        height: 15rem;   /* fixed height so it looks consistent */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+     /* .scrollWrapper::-webkit-scrollbar {
+        display: none;
+    } */
 }
