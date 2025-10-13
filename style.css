@@ -34,22 +34,23 @@
     height: auto;
   }
 
+
   .contact:hover .contact_a_dropdown { /*Dropdown*/
   display: block;
-  }
+  justify-content: space-around;
+  min-width: 37rem;
+  background-color: rgb(40, 40, 40);
+  padding: 0px;
+  margin: 0px;
+  /*align-items: center; */
+  } 
 
   .contact_a_dropdown {
   display: none;
-  position: absolute;
-  min-width: 37rem;
-  padding: 0rem 2rem;
-  top: 100%;
-  left: 0%;
-  background-color: rgb(40, 40, 40);
-  border-top: .2rem solid #000000;
-  border-bottom: .2rem solid #000000;
-  border-right: .2rem solid #000000;
-  box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.5);
+  }
+
+  .contact_a_dropdown img {
+    max-height: 100%;
   }
 }
 
@@ -93,7 +94,61 @@
     border: .2rem solid #000000;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.85), 0 0 2rem rgba(0, 0, 0, 0.6);
   }
+
+    .contact_a_dropdown_mobile { 
+      position: sticky;
+      top: 50%;
+      transform: translateY(-50%);
+      height: fit-content;
+      width: 90%;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      background-color: rgb(255, 255, 255);
+      border: .2rem solid #000000;
+      border-radius: 50%;
+      box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.85), 0 0 2rem rgba(0, 0, 0, 0.6);
+  }
+  
+.contact_a_dropdown_mobile_links {
+  word-break: break-all; /* breaks long words like emails or URLs */
+  overflow-wrap: break-word;
+  display: inline-block;
+  max-width: 100%; /* ensure it stays inside the container */
 }
+
+
+.contact_a_dropdown_mobile_links:link {
+  color: rgb(235, 45, 153);
+}
+.contact_a_dropdown_mobile_links:visited {
+  color: rgb(235, 45, 153);
+}
+.contact_a_dropdown_mobile_links:active {
+  color: rgb(235, 45, 153);
+}
+.contact_a_dropdown_mobile_links:hover {
+  color: rgb(235, 45, 153);
+}
+
+
+  .contact_a_dropdown_mobile p{
+    font-size: 1.5rem;
+  }
+}
+
+ .contact_a_dropdown_mobile_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.623);
+    display: none;
+    justify-content: center;
+  }
 
 @font-face {
   font-family: 'Ighofonto';
@@ -161,12 +216,14 @@ body {
 }
 
 .contact {
+  gap: 2rem;
+  height: 4rem;
   position: relative;
   padding: 1.5rem 2rem;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  flex-direction: row;
+  /* align-items: flex-start; */
+  /* justify-content: center; */
 } 
 
 a.contact_a:link {
@@ -187,37 +244,10 @@ a.contact_a:active {
   color: rgb(235, 45, 153);
 }
 
-.contact_a_dropdown_mobile_bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.623);
-  /* display: flex; */
-  display: none;
-  justify-content: center;
-}
-
-.contact_a_dropdown_mobile { 
-    position: sticky;
-    top: 50%;
-    transform: translateY(-50%);
-    height: fit-content;
-    width: 75%;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(92, 58, 106);
-    border: .2rem solid #000000;
-    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.85), 0 0 2rem rgba(0, 0, 0, 0.6);
-}
-
 .closeIcon { /*Close img link*/
+  opacity: 0%;/*im tired*/
   position: absolute;
-  top: 1rem;
+  top: 2.5rem;
   right: 1rem;
 }
 
@@ -228,14 +258,7 @@ a.contact_a:active {
 
 .contact_a_dropdown_mobile p {
     /* width: 90%; */
-    margin: 1rem;
-}
-
-.contact_a_dropdown_mobile_links {
-  word-break: break-all; /* breaks long words like emails or URLs */
-  overflow-wrap: break-word;
-  display: inline-block;
-  max-width: 100%; /* ensure it stays inside the container */
+    margin: 0rem;
 }
 
 .body_upperHalf {

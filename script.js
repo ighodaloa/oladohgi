@@ -247,6 +247,21 @@ toggle.addEventListener('click', (e) => {
     dropdown.style.display = dropdown.style.display === 'flex' ? 'none' : 'flex';
   }
 });
+// If the user toggles dropdown and leaves mobile mode before exiting out of the dropdown. We need to put an end to that dropdown...
+window.addEventListener('resize', () => {
+  const isMobile = window.innerWidth < 768;
+
+  if (isMobile) {
+    console.log('Mobile mode!');
+  } else {
+    console.log('Desktop mode!');
+    
+    // When switching to desktop, hide the mobile dropdown if it's open
+    if (window.getComputedStyle(dropdown).display === 'flex') {
+      dropdown.style.display = 'none';
+    }
+  }
+});
 
 // Close dropdown on clicking close button
 closeButton.addEventListener('click', (e) => {

@@ -69,6 +69,10 @@ body {
   padding-right: 2rem;
   width: auto;
 }
+.item img {
+  max-width: 60%;
+  height: auto;
+}
 
 
 
@@ -80,18 +84,18 @@ body {
 
     .wrapper h2 {
      margin: 0;
-  padding: 0;
+  /* padding: 0;
   background: rgb(10, 77, 105);
   border: solid rgb(1, 17, 23) .2rem;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   display: inline-block; /* makes width shrink to text */
-    }
+    } 
 
     .scrollWrapper {
   border: solid 0rem rgb(1, 17, 23);
   border-top-left-radius: 0;      /* top-left stays sharp */
-  border-top-right-radius: 1rem;  /* top-right rounded */
+  border-top-right-radius: 0;  /* top-right rounded */
   border-bottom-right-radius: 1rem; /* bottom-right rounded */
   border-bottom-left-radius: 1rem;  /* bottom-left rounded */
         background-color: rgb(13, 90, 123);
@@ -119,18 +123,18 @@ body {
 
     .wrapper h2 {
      margin: 0;
-  padding: 0;
+  /* padding: 0;
   background: rgb(10, 77, 105);
   border: solid rgb(1, 17, 23) .2rem;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-  display: inline-block; /* makes width shrink to text */
+  display: inline-block; makes width shrink to text */
     }
 
     .scrollWrapper {
   border: solid 0rem rgb(1, 17, 23);
   border-top-left-radius: 0;      /* top-left stays sharp */
-  border-top-right-radius: 1rem;  /* top-right rounded */
+  border-top-right-radius: 0;  /* top-right rounded */
   border-bottom-right-radius: 1rem; /* bottom-right rounded */
   border-bottom-left-radius: 1rem;  /* bottom-left rounded */
         background-color: rgb(13, 90, 123);
