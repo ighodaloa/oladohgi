@@ -11,7 +11,7 @@ html{
 
 h2 {
   font-size: 3.75rem;
-  color: #000000;
+  color: #ffffff;
 }
 
 p {
@@ -47,7 +47,7 @@ p {
 
 body {
     font-family: 'Ighofonto', sans-serif;
-    background-color: rgb(11, 99, 136);
+    background-color: #353534;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,6 +72,11 @@ body {
 .item img {
   max-width: 60%;
   height: auto;
+}
+.item p {
+  max-width: 60%;
+  height: auto;
+  font-size: 2.5rem;
 }
 
 
@@ -98,7 +103,7 @@ body {
   border-top-right-radius: 0;  /* top-right rounded */
   border-bottom-right-radius: 1rem; /* bottom-right rounded */
   border-bottom-left-radius: 1rem;  /* bottom-left rounded */
-        background-color: rgb(13, 90, 123);
+        background-color: rgb(46, 46, 46);
         width: 100%;
         overflow-x: auto; /* this creates the horizontal scrollbar */
         display: flex;
@@ -106,12 +111,29 @@ body {
     }
 
     .item {
-        background-color: rgb(16, 137, 189);
+        background-color: rgb(92, 92, 92);
         min-width: 33%; /* each item takes up some chunk of width */
         height: 20rem;   /* fixed height so it looks consistent */
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .scrollWrapperItemIMGLink {
+      display: flex;
+      justify-content: center;
+    }
+        /* hover effect */
+    .scrollWrapperItemIMGLink:hover {
+      filter: brightness(1.1); /* slightly brighten image or content */
+      color: #007bff; /* example hover text color */
+      transform: scale(1.03); /* subtle zoom-in */
+    }
+
+    /* Active (click) effect */
+    .scrollWrapperItemIMGLink:active {
+      filter: brightness(0.9); /* slight darken */
+      transform: scale(0.97); /* small press-down effect */
+      color: #0056b3; /* darker color on click */
     }
 }
 
@@ -137,7 +159,7 @@ body {
   border-top-right-radius: 0;  /* top-right rounded */
   border-bottom-right-radius: 1rem; /* bottom-right rounded */
   border-bottom-left-radius: 1rem;  /* bottom-left rounded */
-        background-color: rgb(13, 90, 123);
+        background-color: rgb(46, 46, 46);
         width: 100%;
         overflow-x: auto; /* this creates the horizontal scrollbar */
         display: flex;
@@ -145,12 +167,29 @@ body {
     }
 
     .item {
-        background-color: rgb(16, 137, 189);
+        background-color: rgb(92, 92, 92);
         min-width: 75%; /* each item takes up some chunk of width */
         height: 25rem;   /* fixed height so it looks consistent */
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .scrollWrapperItemIMGLink {
+      display: flex;
+      justify-content: center;
+    }
+    /* hover effect */
+    .scrollWrapperItemIMGLink:hover {
+      filter: brightness(1.1); /* slightly brighten image or content */
+      color: #007bff; /* example hover text color */
+      transform: scale(1.03); /* subtle zoom-in */
+    }
+
+    /* Active (click) effect */
+    .scrollWrapperItemIMGLink:active {
+      filter: brightness(0.9); /* slight darken */
+      transform: scale(0.97); /* small press-down effect */
+      color: #0056b3; /* darker color on click */
     }
 
 }
