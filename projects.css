@@ -74,9 +74,9 @@ body {
   height: auto;
 }
 .item p {
-  max-width: fit-content;
-  height: auto;
-  font-size: 3rem;
+  width: 90%;
+  height: 90%;
+  font-size: 2rem;
   padding: 0rem 2rem;
 }
 
@@ -127,12 +127,7 @@ body {
     } */
 
     .item p{
-      /* width: 100%;
-      height: 100%; */
-      display: inline;
-      justify-content: center;
-      align-items: center;
-      font-size: 4rem;
+      font-size: clamp(1.5rem, 2vw, 9rem);
       padding: 0rem 2rem;
     }
 
@@ -187,20 +182,23 @@ body {
 
     .item {
         background-color: rgb(92, 92, 92);
-        width: 75%; /* each item takes up some chunk of width */
-        height: 25rem;   /* fixed height so it looks consistent */
+        /*min-width: 33%; /* each item takes up some chunk of width */
+        /*height: 20rem;   /* fixed height so it looks consistent */
+        width: 50%;
+        min-width: 13rem;
+        height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
+    /* .itemIMG {
+      widt
+    } */
+
     .item p{
-      /* width: 100%;
-      height: 100%; */
-      display: inline;
-      justify-content: center;
-      align-items: center;
-      font-size: 4rem;
+      min-width: 13rem;
+      font-size: clamp(1.5rem, 2vw, 9rem);
       padding: 0rem 2rem;
     }
 
