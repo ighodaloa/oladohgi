@@ -9,7 +9,7 @@
     </head>
 
     <body>
-       <div class = "header">
+       <header class = "header">
             <div class = "contact" id = "contactToggle" > <!--Consider removing after adding the dropdown, as we may not need a div over here-->
                 <a class="contact_a" href="#" onclick="event.preventDefault()">Reach Me!</a>
                 <div class = "contact_a_dropdown"> <!--Drop down used for PC Mode-->
@@ -22,45 +22,47 @@
                 </div>
             </div>
             <img class = "logo-mobile" id = "mobileMode" src = "portrait.png" alt = "Cartoon Portrait of Ighodalo"> <!--portrain icon used on mobile mode-->
-       </div>
+        </header>
 
-        <div class="contact_a_dropdown_mobile_bg" id="contactDropdown"> <!--Drop down BG used for Mobile Mode-->
+        <section class="contact_a_dropdown_mobile_bg" id="contactDropdown"> <!--Drop down BG used for Mobile Mode-->
             <div class="contact_a_dropdown_mobile"> <!--Drop down used for Mobile Mode-->
                 <a class="closeIcon" href="#" id="closeButton" onclick="event.preventDefault()">
                     <img src="closeIcon.png" alt="Close Button">
                 </a>
-                <p>Email: <a href ="mailto:Ighodalo.Agbonkhese@outlook.com" target="_blank" class = "contact_a_dropdown_mobile_links">Ighodalo.Agbonkhese@outlook.com</a></p>
-                <p>Linkedin: <a href="https://www.linkedin.com/in/ighodaloa/" target="_blank" class = "contact_a_dropdown_mobile_links">Ighodalo Agbonkhese</a></p>
-                <p>YouTube: <a href="https://www.youtube.com/@tc0358" target="_blank" class = "contact_a_dropdown_mobile_links">tc0358</a></p>
+                <div>
+                    <a href = "mailto:Ighodalo.Agbonkhese@outlook.com" target="_blank"><img src = "emailLogo.png" alt = "drawing of email icon"></a>
+                    <a href = "https://www.linkedin.com/in/ighodaloa/" target="_blank"><img src = "linkedinLogo.png" alt = "drawing of LinkedIn logo icon"></a>
+                    <a href = "https://www.youtube.com/@tc0358" target="_blank"><img src = "YTLogo.png" alt = "drawing of YouTube logo icon"></a>
+                </div>    
                 <p>(Hit anywhere outside the bubble to close...)</p>
                     <!-- <a href = "mailto:Ighodalo.Agbonkhese@outlook.com" target="_blank" class = "contact_a_dropdown_mobile_links"><img src = "emailLogo.png" alt = "drawing of email icon">Ighodalo.Agbonkhese@outlook.com</a>
                     <a href = "https://www.linkedin.com/in/ighodaloa/" target="_blank" class = "contact_a_dropdown_mobile_links"><img src = "linkedinLogo.png" alt = "drawing of LinkedIn logo icon">Ighodalo Agbonkhese</a>
                     <a href = "https://www.youtube.com/@tc0358" target="_blank" class = "contact_a_dropdown_mobile_links"><img src = "YTLogo.png" alt = "drawing of YouTube logo icon">tc0358</a> -->
             </div>
-        </div>
+        </section>
 
         <video id="bg-video" autoplay muted loop playsinline>
             <source src="BackgroundVideo.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
-       <div class = "body">
+       <section class = "body">
             <div class = "body_upperHalf">
                 <img class = "logo-desktop" src = "portrait.png" alt = "Cartoon Portrait of Ighodalo">
             </div>
              <div class = "body_lowerHalf">
                 <div class = "Quote_of_the_day">
-                    <h2>Quote of the day!</h2>
+                    <h2>Random Quote!</h2>
                     <p id="quote">Loading quote...</p>
                     <p id="author"></p>
                 </div>
                 <a class = "projects" href = "projects.html"><img src = "Projects.png" alt = "icon for projects link"></a>
                 <div class = "Image_of_the_day">
-                    <h2>Image of the day!</h2>
+                    <h2>Random Image!</h2>
                     <img id="meme-img" alt="Image of the day"/>
                 </div>
             </div> 
-       </div>
+        </section>
 
        <div class = "footer">
 

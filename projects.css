@@ -106,7 +106,7 @@ body {
   border-bottom-left-radius: 1rem;  /* bottom-left rounded */
         background-color: rgb(46, 46, 46);
         width: 100%;
-        overflow-x: auto; /* this creates the horizontal scrollbar */
+        overflow:hidden;
         display: flex;
         gap: .2rem;
     }
@@ -122,9 +122,9 @@ body {
         justify-content: center;
     }
 
-    /* .itemIMG {
-      widt
-    } */
+    .itemIMG {
+      width:500px;
+    }
 
     .item p{
       font-size: clamp(1.5rem, 2vw, 9rem);
@@ -175,7 +175,7 @@ body {
   border-bottom-left-radius: 1rem;  /* bottom-left rounded */
         background-color: rgb(46, 46, 46);
         width: 100%;
-        overflow-x: auto; /* this creates the horizontal scrollbar */
+        overflow: hidden;
         display: flex;
         gap: .2rem;
     }
@@ -192,9 +192,9 @@ body {
         justify-content: center;
     }
 
-    /* .itemIMG {
-      widt
-    } */
+    .itemIMG {
+      width:500px;
+    }
 
     .item p{
       min-width: 13rem;
